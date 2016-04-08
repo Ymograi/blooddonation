@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button login=(Button) findViewById(R.id.Signin);
         Button signup=(Button)findViewById(R.id.Signup);
-        final EditText uname=(EditText) findViewById(R.id.editText);
+        final EditText uname=(EditText) findViewById(R.id.username);
         final EditText pass=(EditText)findViewById(R.id.password);
         final RadioGroup usertype=(RadioGroup)findViewById(R.id.radioGroup);
 
@@ -49,31 +49,49 @@ public class MainActivity extends AppCompatActivity {
 
                 int selectedUsertype = usertype.getCheckedRadioButtonId();
                 RadioButton checkedusertype = (RadioButton)findViewById(selectedUsertype);
+//                Toast.makeText(MainActivity.this,"Before valid " + uname,Toast.LENGTH_LONG).show();
                 if(valid) {
                     Retrofit retrofit = new Retrofit.Builder()
-                            .baseUrl("http://192.168.1.100/bloodapp_api/")
+                            .baseUrl(getResources().getString(R.string.URL))
                             .build();
                     loginUser lin = retrofit.create(loginUser.class);
                     final String uname_text = uname.getText().toString();
                     String pass_text = pass.getText().toString();
-
+                    final String type_text = checkedusertype.getText().toString().toLowerCase();
+//                    Toast.makeText(MainActivity.this,"Inside valid " + uname_text,Toast.LENGTH_LONG).show();
                     //String email="abinbhattacharya@gmail.com";
-                    Call<ResponseBody> call = lin.getData(uname_text, pass_text);
-                    //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+                    Call<ResponseBody> call = lin.getData(uname_text, pass_text,type_text);
+//                    Toast.makeText(MainActivity.this, "call created", Toast.LENGTH_SHORT).show();
                     call.enqueue(new Callback<ResponseBody>() {
                         @Override
                         public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                             try {
                                 String result = response.body().string();
+                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
                                 int end = result.lastIndexOf("}") + 1;
                                 int start = result.indexOf("{");
                                 result = result.substring(start, end);
                                 JSONObject resultJSONStr = new JSONObject(result);
                                 String errorCode = resultJSONStr.getString("error");
-                                //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
                                 if (errorCode.equals("false")) {
-                                    Intent i = new Intent(MainActivity.this, Main2Activity.class);
-                                    i.putExtra("name", uname_text);
+                                    String userType = resultJSONStr.getString("type");
+
+                                    Intent i;
+
+                                    if(userType.equalsIgnoreCase("admin"))
+                                        i = new Intent(MainActivity.this, AdminHomepage.class);
+
+                                    else if(userType.equalsIgnoreCase("volunteer"))
+                                        i = new Intent(MainActivity.this, VolunteerHomepage.class);
+
+                                    else
+                                        i = new Intent(MainActivity.this, SeekerHomepage.class);
+
+//                                    Toast.makeText(MainActivity.this,"Inside onResponse " + uname_text,Toast.LENGTH_LONG).show();
+
+                                    i.putExtra("uname_text", uname_text);
+                                    i.putExtra("type", userType);
                                     startActivity(i);
                                 }
                                 Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
@@ -105,5 +123,5 @@ public class MainActivity extends AppCompatActivity {
 interface loginUser{
     @FormUrlEncoded
     @POST("login.php")
-    Call<ResponseBody> getData(@Field("username") String uname_text,@Field("password") String pass_text);
+    Call<ResponseBody> getData(@Field("username") String uname_text,@Field("password") String pass_text, @Field("type") String type_text);
 }
