@@ -94,7 +94,7 @@
             android:text="Donor "
             android:id="@+id/Donor"
             android:checked="true"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
@@ -104,7 +104,7 @@
             android:text="Seeker  "
             android:id="@+id/Seeker"
             android:checked="false"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:paddingLeft="5dp" />
 
         <RadioButton
@@ -113,7 +113,7 @@
             android:text="Admin"
             android:id="@+id/Admin"
             android:checked="false"
-            android:textSize="25dp"
+            android:textSize="20dp"
             android:paddingLeft="5dp" />
 
     </RadioGroup>
