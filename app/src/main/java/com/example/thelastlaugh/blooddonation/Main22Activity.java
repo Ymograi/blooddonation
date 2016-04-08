@@ -26,14 +26,14 @@ public class Main22Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main22);
         Button signup=(Button) findViewById(R.id.button2);
-        final EditText uname=(EditText) findViewById(R.id.editText);
+        final EditText uname=(EditText) findViewById(R.id.username);
         final EditText pass=(EditText)findViewById(R.id.password);
-        final EditText email=(EditText)findViewById(R.id.editText3);
+        final EditText email=(EditText)findViewById(R.id.email);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://192.168.1.100/bloodapp_api/")
+                        .baseUrl(getResources().getString(R.string.URL))
                         .build();
                 registerUser rusr = retrofit.create(registerUser.class);
                 final String uname_text = uname.getText().toString();
