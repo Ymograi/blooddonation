@@ -27,7 +27,7 @@ public class Main22Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main22);
         Button signup=(Button) findViewById(R.id.button2);
         final EditText uname=(EditText) findViewById(R.id.editText);
-        final EditText pass=(EditText)findViewById(R.id.editText2);
+        final EditText pass=(EditText)findViewById(R.id.password);
         final EditText email=(EditText)findViewById(R.id.editText3);
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

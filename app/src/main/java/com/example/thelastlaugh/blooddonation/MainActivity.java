@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 import org.json.JSONObject;
 import okhttp3.ResponseBody;
@@ -24,55 +26,69 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button login=(Button) findViewById(R.id.button3);
-        Button signup=(Button)findViewById(R.id.button2);
+        Button login=(Button) findViewById(R.id.Signin);
+        Button signup=(Button)findViewById(R.id.Signup);
         final EditText uname=(EditText) findViewById(R.id.editText);
-        final EditText pass=(EditText)findViewById(R.id.editText2);
-        startService(new Intent(this,AndroidLocationServices.class));
+        final EditText pass=(EditText)findViewById(R.id.password);
+        final RadioGroup usertype=(RadioGroup)findViewById(R.id.radioGroup);
+
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Retrofit retrofit=new Retrofit.Builder()
-                        .baseUrl("http://192.168.1.100/bloodapp_api/")
-                        .build();
-                loginUser lin =retrofit.create(loginUser.class);
-                final String uname_text = uname.getText().toString();
-                String pass_text = pass.getText().toString();
+                boolean valid=true;
+                if(uname.getText().toString().trim().equals("")){
+                    uname.setError("Please enter username.");
+                    valid=false;
+                }
 
-                //String email="abinbhattacharya@gmail.com";
-                Call<ResponseBody> call = lin.getData(uname_text,pass_text);
-                //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
-                call.enqueue(new Callback<ResponseBody>() {
-                    @Override
-                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                        try{
-                            String result = response.body().string();
-                            int end = result.lastIndexOf("}")+1;
-                            int start = result.indexOf("{");
-                            result = result.substring(start,end);
-                            JSONObject resultJSONStr = new JSONObject(result);
-                            String errorCode = resultJSONStr.getString("error");
-                            //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
-                            if(errorCode.equals("false"))
-                            {
-                                Intent i = new Intent(MainActivity.this,Main2Activity.class);
-                                i.putExtra("name",uname_text);
-                                startActivity(i);
+                if(pass.getText().toString().equals("")){
+                    pass.setError("Please enter password.");
+                    valid=false;
+                }
+
+                int selectedUsertype = usertype.getCheckedRadioButtonId();
+                RadioButton checkedusertype = (RadioButton)findViewById(selectedUsertype);
+                if(valid) {
+                    Retrofit retrofit = new Retrofit.Builder()
+                            .baseUrl("http://192.168.1.100/bloodapp_api/")
+                            .build();
+                    loginUser lin = retrofit.create(loginUser.class);
+                    final String uname_text = uname.getText().toString();
+                    String pass_text = pass.getText().toString();
+
+                    //String email="abinbhattacharya@gmail.com";
+                    Call<ResponseBody> call = lin.getData(uname_text, pass_text);
+                    //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+                    call.enqueue(new Callback<ResponseBody>() {
+                        @Override
+                        public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+                            try {
+                                String result = response.body().string();
+                                int end = result.lastIndexOf("}") + 1;
+                                int start = result.indexOf("{");
+                                result = result.substring(start, end);
+                                JSONObject resultJSONStr = new JSONObject(result);
+                                String errorCode = resultJSONStr.getString("error");
+                                //Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+                                if (errorCode.equals("false")) {
+                                    Intent i = new Intent(MainActivity.this, Main2Activity.class);
+                                    i.putExtra("name", uname_text);
+                                    startActivity(i);
+                                }
+                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
+                            } catch (Exception e) {
+                                Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                             }
-                            Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
                         }
-                        catch (Exception e){
-                            Toast.makeText(MainActivity.this,e.toString(),Toast.LENGTH_LONG).show();
+
+                        @Override
+                        public void onFailure(Call<ResponseBody> call, Throwable t) {
+
                         }
-                    }
+                    });
 
-                    @Override
-                    public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                    }
-                });
-
-
+                }
             }
         });
         signup.setOnClickListener(new View.OnClickListener() {

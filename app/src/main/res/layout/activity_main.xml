@@ -7,19 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.thelastlaugh.blooddonation.MainActivity">
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign up"
-        android:id="@+id/button2"
-        android:clickable="true"
-        android:foregroundTint="#413333"
-        android:layout_below="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+    tools:context="com.example.thelastlaugh.blooddonation.MainActivity"
+    android:focusable="false"
+    android:background="#ffffffff">
 
     <TextView
         android:layout_width="wrap_content"
@@ -29,9 +19,8 @@
         android:id="@+id/textView"
         android:textSize="30dp"
         android:textColor="#9a2d2d"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="false" />
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,7 +32,7 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
         android:src="@drawable/bloodbababba"
@@ -52,37 +41,93 @@
         android:layout_alignParentEnd="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:hint="Username"
         android:layout_below="@+id/textView"
         android:layout_marginTop="39dp"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText2"
+        android:id="@+id/password"
         android:hint="Password"
         android:layout_below="@+id/editText"
         android:layout_alignLeft="@+id/editText"
         android:layout_alignStart="@+id/editText"
         android:layout_alignRight="@+id/editText"
         android:layout_alignEnd="@+id/editText"
-        android:password="true" />
+        android:password="true"
+        android:shadowColor="#5e2a2a"
+        android:theme="@style/AlertDialog.AppCompat.Light" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign In"
-        android:id="@+id/button3"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:id="@+id/Signin"
+        android:elegantTextHeight="false"
+        android:textSize="25dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/radioGroup"
+        android:paddingTop="15dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donor "
+            android:id="@+id/Donor"
+            android:checked="true"
+            android:textSize="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seeker  "
+            android:id="@+id/Seeker"
+            android:checked="false"
+            android:textSize="25dp"
+            android:paddingLeft="5dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin"
+            android:id="@+id/Admin"
+            android:checked="false"
+            android:textSize="25dp"
+            android:paddingLeft="5dp" />
+
+    </RadioGroup>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/Signup"
+        android:elegantTextHeight="false"
+        android:textSize="25dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
 </RelativeLayout>
