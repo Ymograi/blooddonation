@@ -32,7 +32,8 @@
         <activity android:name=".VolunteerHomepage" />
         <activity android:name=".SeekerHomepage" />
         <activity android:name=".RegisterVolunteer" />
-        <activity android:name=".RegisterVolunteerConfirm"></activity>
+        <activity android:name=".RegisterVolunteerConfirm" />
+        <activity android:name=".verify_list"></activity>
     </application>
 
 </manifest>
