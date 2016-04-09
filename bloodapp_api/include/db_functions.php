@@ -113,15 +113,15 @@ require_once 'include\config.php';
 			return false;
 	}
 
-	function addVolunteer($username,$password,$email,$name,$phone,$id_type,$id_number,$blood_group,$rh_factor,$mysqli)
+	function addVolunteer($username,$password,$email,$name,$phone,$id_type,$id_number,$blood_group,$mysqli)
 	{
 		$hash=hashSSHA($password);
 		$encrypted_password=$hash["encrypt"];
 		$salt=$hash["salt"];
 		//$conn=new mysqli("localhost", "root", "", "adbms_api") or die("Error connecting to database.");
 			//echo "connection created";
-		$stmt=$mysqli->prepare("insert into volunteer(username,password,salt,email,name,phone,id_type,id_number,blood_group,rh_factor) values (?,?,?,?,?,?,?,?,?,?);");
-		$stmt->bind_param("ssssssssss",$username,$encrypted_password,$salt,$email,$name,$phone,$id_type,$id_number,$blood_group,$rh_factor);
+		$stmt=$mysqli->prepare("insert into volunteer(username,password,salt,email,name,phone,id_type,id_number,blood_group) values (?,?,?,?,?,?,?,?,?);");
+		$stmt->bind_param("sssssssss",$username,$encrypted_password,$salt,$email,$name,$phone,$id_type,$id_number,$blood_group);
 		$result=$stmt->execute();
 		$stmt->close();
 

@@ -1,17 +1,11 @@
 package com.example.thelastlaugh.blooddonation;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -47,7 +41,7 @@ public class Main22Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://192.168.0.105/bloodapp_api/")
+                        .baseUrl(getResources().getString(R.string.URL))
                         .build();
                 registerUser rusr = retrofit.create(registerUser.class);
                 final String uname_text = uname.getText().toString();

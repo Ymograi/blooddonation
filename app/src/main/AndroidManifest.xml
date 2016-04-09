@@ -29,8 +29,10 @@
         <activity android:name=".Main22Activity" />
         <activity android:name=".Main23Activity" />
         <activity android:name=".AdminHomepage" />
-        <activity android:name=".VolunteerHomepage"></activity>
-        <activity android:name=".SeekerHomepage"></activity>
+        <activity android:name=".VolunteerHomepage" />
+        <activity android:name=".SeekerHomepage" />
+        <activity android:name=".RegisterVolunteer" />
+        <activity android:name=".RegisterVolunteerConfirm"></activity>
     </application>
 
 </manifest>

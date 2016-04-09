@@ -44,12 +44,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/name"
+                android:inputType="textPersonName"
                 android:hint="Name"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/uname"
+                android:inputType="textPersonName"
                 android:hint="Username"/>
 
             <EditText
@@ -72,12 +74,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idtype"
+                android:inputType="textPersonName"
                 android:hint="ID-Type"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/idno"
+                android:inputType="textPersonName"
                 android:hint="ID-No"/>
 
             <EditText
