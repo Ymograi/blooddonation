@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button login=(Button) findViewById(R.id.Signin);
-        Button signup=(Button)findViewById(R.id.Signup);
+        Button vsignup=(Button)findViewById(R.id.vsignup);
+        Button ssignup  = (Button)findViewById(R.id.ssignup);
         final EditText uname=(EditText) findViewById(R.id.username);
         final EditText pass=(EditText)findViewById(R.id.password);
         final RadioGroup usertype=(RadioGroup)findViewById(R.id.radioGroup);
@@ -109,7 +110,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        signup.setOnClickListener(new View.OnClickListener() {
+        vsignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, RegisterVolunteer.class);
+                startActivity(i);
+            }
+        });
+        ssignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, Main22Activity.class);

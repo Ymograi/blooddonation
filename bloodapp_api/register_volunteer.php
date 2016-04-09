@@ -11,7 +11,7 @@ $response=array('error'=>FALSE);
 
 
 if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])&&isset($_POST['name'])&&isset($_POST['phone'])
-&&isset($_POST['id_type'])&&isset($_POST['id_num'])&&isset($_POST['blood_group'])&&isset($_POST['rh_factor']))
+&&isset($_POST['id_type'])&&isset($_POST['id_num'])&&isset($_POST['blood_group']))
 {
 	//echo "ifblock";
 	//Get the POST parameters
@@ -23,7 +23,6 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])&
 	$id_type=$_POST['id_type'];
 	$id_number=$_POST['id_num'];
 	$blood_group=$_POST['blood_group'];
-	$rh_factor=$_POST['rh_factor'];
 	//echo $username;
 	//Check if user already exists
 	if(checkUser($username,'volunteer',$mysqli))
@@ -35,7 +34,7 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])&
 	else
 	{
 		//Create new user
-		$user=addVolunteer($username,$password,$email,$name,$phone,$id_type,$id_number,$blood_group,$rh_factor,$mysqli);
+		$user=addVolunteer($username,$password,$email,$name,$phone,$id_type,$id_number,$blood_group,$mysqli);
 		if($user)
 		{
 			$response["error"]=FALSE;

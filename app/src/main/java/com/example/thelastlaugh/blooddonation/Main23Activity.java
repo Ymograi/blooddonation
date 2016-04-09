@@ -23,7 +23,7 @@ public class Main23Activity extends AppCompatActivity {
         sd.setText("Username : "+uname.toString());
         sd1.setText("Password: "+pass.toString());
         sd2.setText("Email :"+email.toString());
-        Button signin=(Button)findViewById(R.id.button);
+        Button signin=(Button)findViewById(R.id.signin);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -46,12 +46,8 @@
         android:id="@+id/username"
         android:hint="Username"
         android:inputType="textPersonName"
-        android:layout_below="@+id/textView"
-        android:layout_marginTop="39dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -77,8 +73,7 @@
         android:elegantTextHeight="false"
         android:textSize="25dp"
         android:layout_below="@+id/radioGroup"
-        android:layout_alignLeft="@+id/password"
-        android:layout_alignStart="@+id/password" />
+        android:layout_centerHorizontal="true" />
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -124,12 +119,23 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
-        android:id="@+id/Signup"
+        android:text="Volunteer Sign Up"
+        android:id="@+id/vsignup"
         android:elegantTextHeight="false"
-        android:textSize="25dp"
-        android:layout_below="@+id/radioGroup"
-        android:layout_alignRight="@+id/textView"
-        android:layout_alignEnd="@+id/textView" />
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seeker Sign Up"
+        android:id="@+id/ssignup"
+        android:elegantTextHeight="false"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/vsignup"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup" />
 
 </RelativeLayout>
