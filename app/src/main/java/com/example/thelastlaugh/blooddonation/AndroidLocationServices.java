@@ -33,8 +33,8 @@ import retrofit2.http.POST;
  * Created by Abin on 28-03-2016.
  */
 public class AndroidLocationServices extends Service {
-
     PowerManager.WakeLock wakeLock;
+    String uname;
 
     private LocationManager locationManager;
 
@@ -44,6 +44,7 @@ public class AndroidLocationServices extends Service {
 
     @Override
     public IBinder onBind(Intent arg0) {
+
         // TODO Auto-generated method stub
         return null;
     }
@@ -86,7 +87,7 @@ public class AndroidLocationServices extends Service {
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                30 * 1000, 500, listener);
+                1 * 1000, 500, listener);
 
     }
 
@@ -111,9 +112,9 @@ public class AndroidLocationServices extends Service {
 
                     String lat = Double.toString(location.getLatitude());
                     String longi = Double.toString(location.getLongitude());
-                    String uname = "Abin Bhattacharya";
+                    //String uname = "ymograi";
                     Retrofit retrofit=new Retrofit.Builder()
-                            .baseUrl("http://192.168.1.100/bloodapp_api/")
+                            .baseUrl(getResources().getString(R.string.URL))
                             .build();
                     reportLocation loc =retrofit.create(reportLocation.class);
 
@@ -122,7 +123,7 @@ public class AndroidLocationServices extends Service {
                     call.enqueue(new Callback<ResponseBody>() {
                         @Override
                         public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                            try{
+                            try{Toast.makeText(AndroidLocationServices.this,"inlocationtry",Toast.LENGTH_LONG).show();
                                 String result = response.body().string();
 //                                int end = result.lastIndexOf("}")+1;
 //                                int start = result.indexOf("{");
@@ -138,6 +139,7 @@ public class AndroidLocationServices extends Service {
 
                         @Override
                         public void onFailure(Call<ResponseBody> call, Throwable t) {
+                            Toast.makeText(AndroidLocationServices.this, t.toString(), Toast.LENGTH_LONG).show();
 
                         }
                     });

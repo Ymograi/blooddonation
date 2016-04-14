@@ -1,5 +1,6 @@
 package com.example.thelastlaugh.blooddonation;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -15,7 +16,10 @@ public class VolunteerHomepage extends AppCompatActivity {
         String username = getIntent().getStringExtra("uname_text");
         String userType = getIntent().getStringExtra("userType");
 
-        Toast.makeText(VolunteerHomepage.this,"Inside VHP " + username,Toast.LENGTH_LONG).show();
+        Toast.makeText(VolunteerHomepage.this,"Inside VHP "+ username,Toast.LENGTH_LONG).show();
+        Intent i=new Intent(VolunteerHomepage.this,AndroidLocationServices.class);
+        i.putExtra("username",username);
+        startService(i);
 
         TextView volunteerName = (TextView)findViewById(R.id.volunteer_name);
 

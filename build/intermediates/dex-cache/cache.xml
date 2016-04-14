@@ -1,3 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_6a5354fa4afe2ca35eb063f9ab2a4c9ed77497b2/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.0-beta4/739e00dea1f0ac04fdb9b6160d667e23cc50a791/retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.0-beta4_1486b6b20d6d9e2fe1dd9fa8f54240d243e2b0bb/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c7e58eb8a0876e6bf3f9d6c85eac4da87936d80">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c42484598bd314a54f2610c4a4f2817df5b8a1d7/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.0.1_de0411f0aa409bbefa2fbad84f1bbab09996eb39/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.1_56e664d354d77eef0c9dac0e3be6bdfebf0e7ce7/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.0-beta4/de5935a367ba5e343e9df786ac8fc0c7d52b5f0c/converter-gson-2.0.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.0-beta4_aba785905bc93be8870869a5872a21fab69f7b59/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_1736a688ac2c90c103f852a78e47cd5db0c781b1/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8ba6c264ecc83da2ee178ecc6e596322de36bb63">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_8790b146888d71007e71e7d990cf8dbbf3350fcb/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_0ddeec653ece1f20c6a96eb74b11bda98a9c8d61/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.4_21de3168c3c2c46d09117abf55a5d70dec458289/classes.dex" />
+    </item>
+    <item
+        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/thelastlaugh/Downloads/blooddonation-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_f750d04657fc29f4f0746fa7ed795d78e08445e9/classes.dex" />
+    </item>
+
+</items>

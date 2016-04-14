@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
         final EditText uname=(EditText) findViewById(R.id.username);
         final EditText pass=(EditText)findViewById(R.id.password);
         final RadioGroup usertype=(RadioGroup)findViewById(R.id.radioGroup);
-
+//        Intent i=new Intent(MainActivity.this,AndroidLocationServices.class);
+//        startService(i);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 int selectedUsertype = usertype.getCheckedRadioButtonId();
+
                 RadioButton checkedusertype = (RadioButton)findViewById(selectedUsertype);
 //                Toast.makeText(MainActivity.this,"Before valid " + uname,Toast.LENGTH_LONG).show();
                 if(valid) {
@@ -59,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
                     final String uname_text = uname.getText().toString();
                     String pass_text = pass.getText().toString();
                     final String type_text = checkedusertype.getText().toString().toLowerCase();
+                    Toast.makeText(MainActivity.this,type_text,Toast.LENGTH_LONG).show();
 //                    Toast.makeText(MainActivity.this,"Inside valid " + uname_text,Toast.LENGTH_LONG).show();
                     //String email="abinbhattacharya@gmail.com";
                     Call<ResponseBody> call = lin.getData(uname_text, pass_text,type_text);
@@ -74,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                                 result = result.substring(start, end);
                                 JSONObject resultJSONStr = new JSONObject(result);
                                 String errorCode = resultJSONStr.getString("error");
-//                                Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+                               Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
                                 if (errorCode.equals("false")) {
                                     String userType = resultJSONStr.getString("type");
 
@@ -95,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                                     i.putExtra("type", userType);
                                     startActivity(i);
                                 }
-                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_LONG).show();
+                                Toast.makeText(MainActivity.this, result+"afterstartactivity", Toast.LENGTH_LONG).show();
                             } catch (Exception e) {
                                 Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                             }
