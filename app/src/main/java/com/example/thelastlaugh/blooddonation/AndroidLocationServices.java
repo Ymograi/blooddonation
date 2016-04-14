@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -13,6 +14,7 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
+import android.preference.PreferenceManager;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
@@ -34,12 +36,31 @@ import retrofit2.http.POST;
  */
 public class AndroidLocationServices extends Service {
     PowerManager.WakeLock wakeLock;
-    String uname;
+    private static boolean flag = true;
+
+    private String uname;
+
 
     private LocationManager locationManager;
 
     public AndroidLocationServices() {
         // TODO Auto-generated constructor stub
+    }
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        super.onStartCommand(intent,flags,startId);
+//        if (intent!=null) {
+//            uname = intent.getStringExtra("username");
+//            flag = false;
+//        }
+
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        uname = sharedPreferences.getString("username","");
+
+
+        Toast.makeText(AndroidLocationServices.this,"Username in service is " + uname,Toast.LENGTH_LONG).show();
+        return START_STICKY;
     }
 
     @Override
@@ -71,6 +92,13 @@ public class AndroidLocationServices extends Service {
         // TODO Auto-generated method stub
         super.onStart(intent, startId);
 
+//        if(flag){
+//            uname = intent.getStringExtra("username");
+//            flag = false;
+//        }
+
+//        uname = intent.getStringExtra("username");
+//        Toast.makeText(AndroidLocationServices.this,"Username in service onStart is " + uname,Toast.LENGTH_LONG).show();
         Log.e("Google", "Service Started");
 
         locationManager = (LocationManager) getApplicationContext()
@@ -113,6 +141,7 @@ public class AndroidLocationServices extends Service {
                     String lat = Double.toString(location.getLatitude());
                     String longi = Double.toString(location.getLongitude());
                     //String uname = "ymograi";
+                    Toast.makeText(AndroidLocationServices.this,"Username in try is " + uname,Toast.LENGTH_LONG);
                     Retrofit retrofit=new Retrofit.Builder()
                             .baseUrl(getResources().getString(R.string.URL))
                             .build();
@@ -180,7 +209,8 @@ public class AndroidLocationServices extends Service {
     public void onDestroy() {
         // TODO Auto-generated method stub
         super.onDestroy();
-
+        Log.e("Google","Service destroyed");
+        Toast.makeText(AndroidLocationServices.this,"Service destroyed",Toast.LENGTH_LONG).show();
         wakeLock.release();
 
     }
