@@ -31,9 +31,7 @@ import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
-/**
- * Created by Abin on 28-03-2016.
- */
+
 public class AndroidLocationServices extends Service {
     PowerManager.WakeLock wakeLock;
     private static boolean flag = true;
