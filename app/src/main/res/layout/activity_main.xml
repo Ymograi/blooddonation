@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -64,17 +69,6 @@
         android:shadowColor="#5e2a2a"
         android:theme="@style/AlertDialog.AppCompat.Light" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign In"
-        android:id="@+id/Signin"
-        android:elegantTextHeight="false"
-        android:textSize="25dp"
-        android:layout_below="@+id/radioGroup"
-        android:layout_centerHorizontal="true" />
-
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -91,7 +85,7 @@
             android:text="Volunteer"
             android:id="@+id/Donor"
             android:checked="true"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />
 
@@ -101,7 +95,7 @@
             android:text="Seeker  "
             android:id="@+id/Seeker"
             android:checked="false"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:paddingLeft="5dp" />
 
         <RadioButton
@@ -110,7 +104,7 @@
             android:text="Admin"
             android:id="@+id/Admin"
             android:checked="false"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:paddingLeft="5dp" />
 
     </RadioGroup>
@@ -119,23 +113,45 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Volunteer Sign Up"
-        android:id="@+id/vsignup"
+        android:text="Sign In"
+        android:id="@+id/Signin"
         android:elegantTextHeight="false"
-        android:textSize="15dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Seeker Sign Up"
-        android:id="@+id/ssignup"
-        android:elegantTextHeight="false"
-        android:textSize="15dp"
-        android:layout_alignTop="@+id/vsignup"
-        android:layout_alignRight="@+id/radioGroup"
-        android:layout_alignEnd="@+id/radioGroup" />
+        android:textSize="25dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seeker Sign Up"
+            android:id="@+id/ssignup"
+            android:elegantTextHeight="false"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volunteer Sign Up"
+            android:id="@+id/vsignup"
+            android:elegantTextHeight="false"
+            android:textSize="15dp"
+            android:layout_gravity="right"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>

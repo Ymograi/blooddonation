@@ -12,6 +12,7 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['type']))
 	$username=$_POST['username'];
 	$password=$_POST['password'];
 	$type=$_POST['type'];
+	echo $type;
 	//echo "Main if";
 
 	//Try to login user
