@@ -1,5 +1,6 @@
 package com.example.thelastlaugh.blooddonation;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputFilter;
@@ -53,9 +54,9 @@ public class verify_list extends AppCompatActivity {
                     for(int i=0;i<nos;i++)
                     {
                         JSONObject donors_1=donors.getJSONObject(i);
-                        String name_text=donors_1.getString("name");
-                        String bloodtext=donors_1.getString("blood_group");
-                        String phnotext=donors_1.getString("phone");
+                        final String name_text=donors_1.getString("name");
+                        final String bloodtext=donors_1.getString("blood_group");
+                        final String phnotext=donors_1.getString("phone");
                         LinearLayout donr=new LinearLayout(verify_list.this);
                         donr.setOrientation(LinearLayout.HORIZONTAL);
                         TextView name=new TextView(verify_list.this);
@@ -87,7 +88,14 @@ public class verify_list extends AppCompatActivity {
                         donr.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
+                                Intent i=new Intent(verify_list.this,Verify_a_donor.class);
+                                i.putExtra("name",name_text);
+                                i.putExtra("Blood",bloodtext);
+                                i.putExtra("phno",phnotext);
+                                startActivity(i);
                                 Toast.makeText(verify_list.this,""+v.getId(),Toast.LENGTH_SHORT).show();
+
+
                             }
                         });
                     }

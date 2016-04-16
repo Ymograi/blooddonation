@@ -115,7 +115,7 @@ public class AndroidLocationServices extends Service {
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
-                1 * 1000, 500, listener);
+                300 * 1000, 500, listener);
 
     }
 

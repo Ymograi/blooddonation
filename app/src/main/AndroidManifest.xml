@@ -33,7 +33,8 @@
         <activity android:name=".SeekerHomepage" />
         <activity android:name=".RegisterVolunteer" />
         <activity android:name=".RegisterVolunteerConfirm" />
-        <activity android:name=".verify_list"></activity>
+        <activity android:name=".verify_list" />
+        <activity android:name=".Verify_a_donor"></activity>
     </application>
 
 </manifest>
