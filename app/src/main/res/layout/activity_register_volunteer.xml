@@ -83,12 +83,11 @@
                 android:id="@+id/idno"
                 android:hint="ID-No"/>
 
-            <EditText
+            <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:id="@+id/blood_group"
-                android:hint="Blood Group" />
+                android:id="@+id/spinner"
+                android:spinnerMode="dropdown" />
 
             <EditText
                 android:layout_width="match_parent"

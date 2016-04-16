@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -35,13 +37,17 @@ public class RegisterVolunteer extends AppCompatActivity {
         final EditText phno = (EditText) findViewById(R.id.phno);
         final EditText idtype = (EditText) findViewById(R.id.idtype);
         final EditText idno = (EditText) findViewById(R.id.idno);
-        final EditText bloodgroup = (EditText) findViewById(R.id.blood_group);
+        //final EditText bloodgroup = (EditText) findViewById(R.id.blood_group);
+        final Spinner bg=(Spinner)findViewById(R.id.spinner);
+        String[] items=new String[]{"Select Blood Group","O+ve","O-ve","A+","A-","B+","B-","AB+","AB-"};
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_spinner_dropdown_item,items);
+        bg.setAdapter(adapter);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Toast.makeText(RegisterVolunteer.this,"Inside onClick",Toast.LENGTH_LONG).show();
+                final String s=bg.getSelectedItem().toString();
+                Toast.makeText(RegisterVolunteer.this,"Inside onClick"+s,Toast.LENGTH_LONG).show();
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl(getResources().getString(R.string.URL))
                         .build();
@@ -53,11 +59,11 @@ public class RegisterVolunteer extends AppCompatActivity {
                 String phno_text = phno.getText().toString();
                 String idtype_text = idtype.getText().toString();
                 String idno_text = idno.getText().toString();
-                String bloodgroup_text = bloodgroup.getText().toString();
+                //String bloodgroup_text = bloodgroup.getText().toString();
 
                 RegVol regVol = retrofit.create(RegVol.class);
 
-                Call<ResponseBody> call = regVol.getData(uname_text,pass_text,name_text,email_text,phno_text,idtype_text,idno_text,bloodgroup_text);
+                Call<ResponseBody> call = regVol.getData(uname_text,pass_text,name_text,email_text,phno_text,idtype_text,idno_text,s);//s is blood group selected from the spinner
 
                 Toast.makeText(RegisterVolunteer.this,"After call creation",Toast.LENGTH_LONG).show();
 
