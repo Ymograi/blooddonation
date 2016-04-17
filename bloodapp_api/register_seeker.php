@@ -4,6 +4,7 @@ print_r($_POST);
 //Registration endpoint to communiate between app and DB
 //echo "here";
 require_once 'include\db_functions.php';
+require_once 'PHPMailer\PHPMailerAutoload.php';
 //require_once 'include/db_connect.php';
 
 //JSON response array
@@ -30,6 +31,24 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])&
 	$phone=$_POST['phone'];
 	$id_type=$_POST['id_type'];
 	$id_number=$_POST['id_num'];
+
+	$mail = new PHPMailer;
+$mail->SMTPDebug = -3; //Enable SMTP debugging if <0 will show each and everything happening.
+$mail->isSMTP();//Set PHPMailer to use SMTP
+$mail->Host = "smtp.gmail.com";//Set SMTP host name
+$mail->SMTPAuth = true;//Set this to true if SMTP host requires authentication to send email
+$mail->Username = "bloodbank247365@gmail.com";//Provide username and password
+$mail->Password = "bloodbank123";
+$mail->SMTPSecure = "tls";//If SMTP requires TLS encryption then set it
+$mail->Port = 587;//Set TCP port to connect to Mail Details
+$mail->From = "bloodbankadmin@bloodbank.com";
+$mail->FromName = "Blood Donation ";
+$mail->isHTML(TRUE);
+$mail->Subject = "Thank You $name for Signing up as Seeker.";
+$mail->Body = "<b>We look forward to Helping you.</b><br>Username : <b>$username<br></b>Password : <b>$password</b><br>";
+$mail->AltBody = "";
+$mail->AddAddress($email,"$name");
+$mail->SMTPKeepAlive = true;
 	//echo $username;
 	//Check if user already exists
 	if(checkUser($username,'seeker',$mysqli))
@@ -48,6 +67,7 @@ if(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])&
 			$response["username"]=$user["username"];
 			$response["email"]=$user["email"];
 			echo json_encode($response);
+			$mail->send();
 		}
 		else
 		{

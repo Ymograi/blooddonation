@@ -53,3 +53,4 @@ else
 	$response['error_msg']="Required parameters are missing.";
 	echo json_encode($response);
 }
+?>
