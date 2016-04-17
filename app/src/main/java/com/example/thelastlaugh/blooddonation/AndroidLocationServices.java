@@ -57,7 +57,7 @@ public class AndroidLocationServices extends Service {
         uname = sharedPreferences.getString("username","");
 
 
-        Toast.makeText(AndroidLocationServices.this,"Username in service is " + uname,Toast.LENGTH_LONG).show();
+//        Toast.makeText(AndroidLocationServices.this,"Username in service is " + uname,Toast.LENGTH_LONG).show();
         return START_STICKY;
     }
 
@@ -139,7 +139,7 @@ public class AndroidLocationServices extends Service {
                     String lat = Double.toString(location.getLatitude());
                     String longi = Double.toString(location.getLongitude());
                     //String uname = "ymograi";
-                    Toast.makeText(AndroidLocationServices.this,"Username in try is " + uname,Toast.LENGTH_LONG);
+//                    Toast.makeText(AndroidLocationServices.this,"Username in try is " + uname,Toast.LENGTH_LONG);
                     Retrofit retrofit=new Retrofit.Builder()
                             .baseUrl(getResources().getString(R.string.URL))
                             .build();
@@ -150,14 +150,15 @@ public class AndroidLocationServices extends Service {
                     call.enqueue(new Callback<ResponseBody>() {
                         @Override
                         public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                            try{Toast.makeText(AndroidLocationServices.this,"inlocationtry",Toast.LENGTH_LONG).show();
+                            try{
+//                                Toast.makeText(AndroidLocationServices.this,"inlocationtry",Toast.LENGTH_LONG).show();
                                 String result = response.body().string();
 //                                int end = result.lastIndexOf("}")+1;
 //                                int start = result.indexOf("{");
 //                                result = result.substring(start,end);
 //                                JSONObject resultJSONStr = new JSONObject(result);
 //                                String errorCode = resultJSONStr.getString("error");
-                                Toast.makeText(AndroidLocationServices.this, result, Toast.LENGTH_LONG).show();
+//                                Toast.makeText(AndroidLocationServices.this, result, Toast.LENGTH_LONG).show();
                             }
                             catch (Exception e){
                                 Toast.makeText(AndroidLocationServices.this,e.toString(),Toast.LENGTH_LONG).show();

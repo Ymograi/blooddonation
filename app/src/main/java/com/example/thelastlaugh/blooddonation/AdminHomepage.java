@@ -17,6 +17,9 @@ public class AdminHomepage extends AppCompatActivity {
         final String username = getIntent().getStringExtra("uname_text");
         String userType = getIntent().getStringExtra("userType");
         final Button verify_list = (Button)findViewById(R.id.verify_list);
+        Button addDon = (Button) findViewById(R.id.add_donation_record);
+
+        setTitle("Admin Homepage");
 
         TextView adminName = (TextView)findViewById(R.id.admin_name);
 
@@ -31,5 +34,21 @@ public class AdminHomepage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        addDon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(AdminHomepage.this,AddDonationRecord.class);
+                i.putExtra("user",username);
+                i.putExtra("type","admin");
+                startActivity(i);
+            }
+        });
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(AdminHomepage.this,MainActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

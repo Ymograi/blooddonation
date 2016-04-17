@@ -13,7 +13,13 @@
             android:layout_height="40dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Name :"
-            android:id="@+id/namet" />
+            android:id="@+id/name" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Username :"
+            android:id="@+id/username" />
 
         <TextView
             android:layout_width="match_parent"
@@ -24,7 +30,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Phone :"
             android:id="@+id/ph" />
@@ -36,10 +42,56 @@
             android:text="CALL"
             android:id="@+id/cal"
             android:layout_gravity="center_horizontal"
-            android:textSize="23dp" />
+            android:textSize="23dp"
+            android:padding="10dp" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1"
+            android:padding="20dp"
+            android:id="@+id/validate">
 
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valid"
+                android:id="@+id/valid"
+                android:checked="false"
+                android:layout_weight="0.09" />
 
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invalid"
+                android:id="@+id/invalid"
+                android:checked="true"
+                android:layout_weight="0.08" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Press submit to update verification status"
+            android:id="@+id/confirmation"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:textSize="15dp" />
+
+        <!--<WebView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="487dp"-->
+        <!--android:id="@+id/webView" />-->
 
     </LinearLayout>
 </ScrollView>

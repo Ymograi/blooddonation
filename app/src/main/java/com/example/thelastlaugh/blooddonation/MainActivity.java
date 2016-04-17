@@ -1,15 +1,19 @@
 package com.example.thelastlaugh.blooddonation;
 
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
 import org.json.JSONObject;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("Blood Donation App - Login");
         Button login=(Button) findViewById(R.id.Signin);
         Button vsignup=(Button)findViewById(R.id.vsignup);
         Button ssignup  = (Button)findViewById(R.id.ssignup);
@@ -61,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     final String uname_text = uname.getText().toString();
                     String pass_text = pass.getText().toString();
                     final String type_text = checkedusertype.getText().toString().toLowerCase();
-                    Toast.makeText(MainActivity.this,type_text,Toast.LENGTH_LONG).show();
+//                    Toast.makeText(MainActivity.this,type_text,Toast.LENGTH_LONG).show();
 //                    Toast.makeText(MainActivity.this,"Inside valid " + uname_text,Toast.LENGTH_LONG).show();
                     //String email="abinbhattacharya@gmail.com";
                     Call<ResponseBody> call = lin.getData(uname_text, pass_text,type_text);
@@ -71,13 +77,13 @@ public class MainActivity extends AppCompatActivity {
                         public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                             try {
                                 String result = response.body().string();
-                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
                                 int end = result.lastIndexOf("}") + 1;
                                 int start = result.indexOf("{");
                                 result = result.substring(start, end);
                                 JSONObject resultJSONStr = new JSONObject(result);
                                 String errorCode = resultJSONStr.getString("error");
-                               Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
+//                               Toast.makeText(MainActivity.this, "hello i am here", Toast.LENGTH_SHORT).show();
                                 if (errorCode.equals("false")) {
                                     String userType = resultJSONStr.getString("type");
 
@@ -100,7 +106,27 @@ public class MainActivity extends AppCompatActivity {
                                     i.putExtra("lon",0);
                                     startActivity(i);
                                 }
-                                Toast.makeText(MainActivity.this, result+"afterstartactivity", Toast.LENGTH_LONG).show();
+                                else
+                                {
+                                    String error_msg = resultJSONStr.getString("error_msg");
+                                    if(error_msg.equalsIgnoreCase("Incorrect login credentials.")) {
+                                        AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
+                                        alert.setTitle("Incorrect Login Credentials"); //Set Alert dialog title here
+                                        alert.setMessage("Wrong username, user type and password combination.");
+                                        alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                dialog.dismiss();
+                                            }
+                                        });
+                                        AlertDialog alertDialog = alert.create();
+                                        alertDialog.show();
+                                    }
+                                    else{
+                                        Toast.makeText(MainActivity.this,error_msg,Toast.LENGTH_LONG).show();
+                                    }
+                                }
+//                                Toast.makeText(MainActivity.this, result+"afterstartactivity", Toast.LENGTH_LONG).show();
                             } catch (Exception e) {
                                 Toast.makeText(MainActivity.this, e.toString(), Toast.LENGTH_LONG).show();
                             }
@@ -108,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                         @Override
                         public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                            Toast.makeText(MainActivity.this, t.toString(), Toast.LENGTH_LONG).show();
                         }
                     });
 
@@ -130,6 +156,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        super.onBackPressed();
     }
 
 }

@@ -2,270 +2,270 @@
 <items version="2" >
 
     <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_021cbc9ae77c4d0931440a2fcd565a738dddc3d2/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.0.1/b34c1f2d993044656e87f88970b6818e99e886ba/okhttp-3.0.1.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.0.1_de0411f0aa409bbefa2fbad84f1bbab09996eb39/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-8.4.0_8dfc70c41fc38860ee83d767e0720ffe6744c85f/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-8.4.0_2070413a90282027d3a5343e95bd3c006916d8fa/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_c31911592e9bb77eb52fb553dfc51c32f483e682/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-8.4.0_c239eacf1c283e73d2a91328eaabf344431e0446/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_256972caf99b583faef4295c861004923e0ab286/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_54eefde7e93d1674e619d83477745894abe23c99/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_7bbaedb7dde12f80a3247bc49775a91ac2841867/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-8.4.0_a99324c3e5ea04a08e81affb34cbe49f93be97d7/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-8.4.0_5198ead1dfa4eb344581c9c00c9f23300b8d825a/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8151b70125e9e2b7c073149e8db9cd5b52562977">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_b92be0eedbfb22de2890df89df6ad4ee52e8fbf8/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-8.4.0_22414027bbb525928191c90f0de23d7075818066/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.0.0-beta4/739e00dea1f0ac04fdb9b6160d667e23cc50a791/retrofit-2.0.0-beta4.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.0.0-beta4_1486b6b20d6d9e2fe1dd9fa8f54240d243e2b0bb/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_735a14ebc55fa6bf6028cb85186daa218286b469/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_9642941d57c62057629913e72008e18f2a2ac0b9/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_1d53e71e3216e7bf1d8058c5fa614ded2b2401e3/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.0.0-beta4/de5935a367ba5e343e9df786ac8fc0c7d52b5f0c/converter-gson-2.0.0-beta4.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.0.0-beta4_aba785905bc93be8870869a5872a21fab69f7b59/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-8.4.0_87244265c9390e89ef44a8a3c91f4c05e09f3c7e/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-8.4.0_2f3b99804b588bf9e74d7d64ebd3e149e763df06/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-8.4.0_bb892e7b80ebbc2235f42de3b8fb68dcd900d523/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/8.4.0/jars/classes.jar"
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-8.4.0_a0307d6cfba606193a8e82bc498ea0755208cbee/classes.dex" />
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_184180a9196389dbaba4fe9858345b38d1dd9984\classes.dex" />
     </item>
     <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-8.4.0_69b2c60397c01c63edc7dc62547afc235a7105db/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_e3861a89d959fc87e6b270bcac283304605e715f/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_2b92b8eb623db0247af0183ddaa31345840a968d/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-8.4.0_74617037bdf54845520921078d8424d6217df159/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-8.4.0_3600f5c27fce3494fb4c84bcc6db308cf60efe96/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="b69f0a7651f4492eb44d879baf1df43cf93b0303">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ad7c358717b8f0c73dfdb8837210f6edb75cd339/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.4/695b63d702f505b9b916e02272e3b6381bade7f/gson-2.4.jar"
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.4_21de3168c3c2c46d09117abf55a5d70dec458289/classes.dex" />
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_0c6526215744423bcee1345e000b896e04a87816\classes.dex" />
     </item>
     <item
-        jar="/home/thelastlaugh/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_f750d04657fc29f4f0746fa7ed795d78e08445e9/classes.dex" />
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_3a94066c61519400911da81012d47690e6442d10\classes.dex" />
     </item>
     <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/8.4.0/jars/classes.jar"
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta4\de5935a367ba5e343e9df786ac8fc0c7d52b5f0c\converter-gson-2.0.0-beta4.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-8.4.0_9243a487144f9b224188aa70d6549b4fca797d8e/classes.dex" />
+        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.0-beta4_f3f484a7f750164176602e1f1b8c11d4d83c7c11\classes.dex" />
     </item>
     <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_b02a34a93b760a547688b91b9e486b08d927159c/classes.dex" />
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_3be12c20ea64f3d3098cf5699bbb9317989b0481\classes.dex" />
     </item>
     <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-8.4.0_5a4438a7970465c3b87b15ebcb3cd6f838445523/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-8.4.0_97eff332a0921b8d00c2602447d27c327cb244e5/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="04de44f90606c77f3b28cf44861f306290505aac">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_964b7bd0d4454eef5b99963f193bcf10288ec3b7/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-8.4.0_14c5b2671d1e89648710d490a7dca4d506af3e4c/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-measurement-8.4.0_e4913de5d8f4fcc685c84d3c37b1279d4a7c2767/classes.dex" />
-    </item>
-    <item
-        jar="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/8.4.0/jars/classes.jar"
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
-        <dex dex="/home/thelastlaugh/AndroidStudioProjects/blooddonation/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-8.4.0_e57a1da15b1b6b42bd4df30d3a5fd578660ad254/classes.dex" />
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_4180a259acfe658d1d7e58d6111b109f3f8eadfb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_3e618b805ddaf664aa0ede50b196cc5832f33a07\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_18322e726167454734fe92d570d7e93e2a40cc05\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_d28d9ad65a924470cb629c8bf4f6b99674033323\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_5fb8e61a72fe877616f2d1a729e089c5a6596215\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.0.1\b34c1f2d993044656e87f88970b6818e99e886ba\okhttp-3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.0.1_74cbd9b88f1191becdc93f3a0d058de31aa9063d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_e3af2e34ed6b6dcd618d2ae878af6c64391f5828\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_735c5a06783c6352d7821e60b149ed289c811793\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c000266c828fe1ce1de96903cfadf2026bfd7f1a">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_c7168fa66f697fad5c8dd586d1c9a55e46a3f650\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_a07272c9f2bc5f32e578abd7d50dc961d520aa05\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_ea05834ba0b1a0a930c05f434495cca198970da8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_815b1f97ba4946e1d70f41fd06f2d165ac85819c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_3bd748d989e5c628d501c32d1e4b77b8cbca5fed\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_b8b82461af4362a6cb1ed08eb60dac6eb3b6e3d1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6063528307f7809d70fdae22b4ec0df4cdbcea30">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3b913461c9e45b02221cdefaffb53c4e3ea40876\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_658c635720a30925c731839ed23a73b43bc3f9af\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_cb8de851bd5e7a544e24825437c0ac560194cefa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_55cd2727cf437132bc91fb42bac0a5df17be1216\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_916a7aeb7595884d4e240f912eaf632af7d665d1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_6507bc1204ddd23f6a73de3b67bc302963e093cb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_d7cea8415660bbe0e0d3ecd94b00b27111ac6f8a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_80515ee68785c81e4c76a8f6d1c9f95f19ff9546\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_18530bea3f378a6d36de9e3e8965c61c9f21e921\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_3354dbcfe270510eada2d4c06962e5456dd1f236\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_c20f217fa593f6f3357b86b1cd3a84ef4e529e2b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_389fa7c044dd24a00aed274e2f13914bedf60303\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_2f55575b2cc22a0340154b8b0445ed99e15fe8c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_b9632078aef18e570f989cd9b405b6828c8c339f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_6d17337a72097b609377b48114953b9524ae5908\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_9cef2212cdc8173a3023315e0d3fe8ef1ba750fe\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_28ef84d8479690c880eb710b9abb84e28ee2c425\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_ed492404deeb527383948faa0239943fd28d2c5e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\BloodDonation\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_8958286385272a93a6364cfed04dc6cff3bd59d5\classes.dex" />
     </item>
 
 </items>

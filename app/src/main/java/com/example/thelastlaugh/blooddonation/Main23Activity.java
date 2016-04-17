@@ -13,16 +13,14 @@ public class Main23Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main23);
-        TextView sd=(TextView)findViewById(R.id.textView5);
-        TextView sd1=(TextView)findViewById(R.id.textView6);
-        TextView sd2=(TextView)findViewById(R.id.textView7);
-        String uname=getIntent().getStringExtra("name");
+        String name=getIntent().getStringExtra("name");
+        String username = getIntent().getStringExtra("username");
         String email=getIntent().getStringExtra("email");
         String pass=getIntent().getStringExtra("password");
 
-        sd.setText("Username : "+uname.toString());
-        sd1.setText("Password: "+pass.toString());
-        sd2.setText("Email :"+email.toString());
+//        sd.setText("Username : "+uname.toString());
+//        sd1.setText("Password: "+pass.toString());
+//        sd2.setText("Email :"+email.toString());
         Button signin=(Button)findViewById(R.id.signin);
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,5 +29,14 @@ public class Main23Activity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        TextView confirmMessage = (TextView)findViewById(R.id.textView4);
+
+        confirmMessage.setText("Congratulations, " + name +".\nYou've successfully signed up as a seeker with the username, "
+                + username + " and email address, " + email+".");
+    }
+    public void onBackPressed() {
+        Intent i = new Intent(Main23Activity.this,MainActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

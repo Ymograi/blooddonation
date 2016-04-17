@@ -14,6 +14,8 @@ public class RegisterVolunteerConfirm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_volunteer_confirm);
 
+        setTitle("Volunteer Registration");
+
         String username = getIntent().getStringExtra("username");
         String email = getIntent().getStringExtra("email");
         String name = getIntent().getStringExtra("name");
@@ -32,5 +34,10 @@ public class RegisterVolunteerConfirm extends AppCompatActivity {
 
         confirmMessage.setText("Congratulations, " + name +".\nYou've successfully signed up as a volunteer with the username, "
                 + username + ". Further instructions have been mailed to your email address, " + email+".");
+    }
+    public void onBackPressed() {
+        Intent i = new Intent(RegisterVolunteerConfirm.this,MainActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }

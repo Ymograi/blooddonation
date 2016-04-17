@@ -17,15 +17,16 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="   Enter Details to Signup"
+        android:text="Seeker  Signup"
         android:id="@+id/textView"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textColor="#9a2d2d"
         android:layout_below="@+id/imageView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -75,13 +76,6 @@
         android:id="@+id/id"
         android:spinnerMode="dropdown"
         />
-
-    <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/idtype"
-                android:inputType="textPersonName"
-                android:hint="ID-Type"/>
 
             <EditText
                 android:layout_width="match_parent"

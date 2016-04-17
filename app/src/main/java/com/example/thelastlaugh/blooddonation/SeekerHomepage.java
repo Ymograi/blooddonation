@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SeekerHomepage extends AppCompatActivity {
     GPSTracker gps;
@@ -17,7 +16,9 @@ public class SeekerHomepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seeker_homepage);
-        Toast.makeText(SeekerHomepage.this, "inseeker", Toast.LENGTH_LONG).show();
+
+        setTitle("Seeker Homepage");
+//        Toast.makeText(SeekerHomepage.this, "in seeker", Toast.LENGTH_LONG).show();
         final String username = getIntent().getStringExtra("uname_text");
         final String userType = getIntent().getStringExtra("userType");
         lat=getIntent().getDoubleExtra("lat",0);
@@ -74,6 +75,7 @@ public class SeekerHomepage extends AppCompatActivity {
                     i.putExtra("lat", lat);
                     i.putExtra("lon", lon);
                     i.putExtra("bg",bld );
+                    i.putExtra("username",username);
                     startActivity(i);
                 }
                 else
@@ -84,5 +86,11 @@ public class SeekerHomepage extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public void onBackPressed() {
+        Intent i = new Intent(SeekerHomepage.this,MainActivity.class);
+        startActivity(i);
+        super.onBackPressed();
     }
 }
