@@ -96,6 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
                                     i.putExtra("uname_text", uname_text);
                                     i.putExtra("type", userType);
+                                    i.putExtra("lat",0);
+                                    i.putExtra("lon",0);
                                     startActivity(i);
                                 }
                                 Toast.makeText(MainActivity.this, result+"afterstartactivity", Toast.LENGTH_LONG).show();

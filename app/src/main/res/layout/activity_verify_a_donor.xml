@@ -38,10 +38,8 @@
             android:layout_gravity="center_horizontal"
             android:textSize="23dp" />
 
-        <WebView
-            android:layout_width="match_parent"
-            android:layout_height="487dp"
-            android:id="@+id/webView" />
+
+
 
     </LinearLayout>
 </ScrollView>

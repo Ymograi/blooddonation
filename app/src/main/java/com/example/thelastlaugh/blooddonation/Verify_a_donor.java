@@ -33,8 +33,7 @@ public class Verify_a_donor extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        WebView webview=(WebView)findViewById(R.id.webView);
-        webview.loadUrl("https://www.gmail.com");
+
 
     }
 }
